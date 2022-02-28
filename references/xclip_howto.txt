@@ -1,0 +1,18 @@
+# copy to clip-board
+echo "unkoooo" | xclip -selection c
+
+# paste from clip-board
+xclip -selection c -o
+
+
+
+-selection [p|s|c|primary|secondary|clipboard]
+入出力する対象を「Xプライマリセレクション」「Xセカンダリセレクション」「クリップボード」から指定します。指定しなければ「Xプライマリセレクション」が使われます。「p」「s」「c」のように頭文字だけでも指定できます。
+
+-o
+Xセレクションやクリップボードの内容を出力します。
+
+
+
+
+https://linuxfan.info/xclip
